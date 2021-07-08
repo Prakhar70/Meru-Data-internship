@@ -1,0 +1,169 @@
+.navi {
+    height: 15vh;
+    background: skyblue;
+    color: white;
+    font-size: 380%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .add {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #add-btn {
+    background: skyblue;
+    border: none;
+    color: white;
+    height: 30px;
+  }
+  .contact-text {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .contact-header {
+    height: 15%;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: space-between;
+  }
+  .contact-search-box {
+    display: flex;
+  
+    flex-direction: row;
+  
+    align-items: center;
+  
+    justify-content: flex-end;
+  }
+  .contacts {
+    /* height: 39%; */
+    height: 334px; /* border: 1px solid red; */
+  }
+  
+  .details {
+    /* border: 1px solid red; */
+    height: 334px;
+  }
+  
+  .footer {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+  }
+  .contact-body {
+    border: 1px solid black;
+  
+    height: 85%;
+  
+    overflow-y: scroll;
+  }
+  .contact {
+    height: 20%;
+    border-bottom: 1px solid black;
+  }
+  #Details p {
+    font-size: 21px;
+    /* padding-left: 5px; */
+    grid-template-areas: "nav nav nav" "add add add" "contact blank details" "footer footer footer";
+  }
+  
+  
+  form {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 85%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 5fr 2fr;
+    grid-template-areas:
+      "name-label blank2 email-label"
+      "name blank2 email"
+      "mobile-label blank2 github-label"
+      "mobile blank2 github"
+      "address-label address-label address-label"
+      "address address address"
+      "submit submit submit";
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 2px;
+  }
+  
+  #name {
+    grid-area: name;
+  }
+  
+  #email {
+    grid-area: email;
+  }
+  
+  #mobile {
+    grid-area: mobile;
+  }
+  
+  #github {
+    grid-area: github;
+  }
+  
+  #address {
+    grid-area: address;
+  }
+  
+  label[for="name"] {
+    grid-area: name-label;
+  }
+  
+  label[for="mobile"] {
+    grid-area: mobile-label;
+  }
+  
+  label[for="email"] {
+    grid-area: email-label;
+  }
+  
+  label[for="github"] {
+    grid-area: github-label;
+  }
+  
+  label[for="address"] {
+    grid-area: address-label;
+  }
+  
+  input[type="submit"] {
+    justify-self: flex-end;
+    /* justify-content: right; */
+    align-self: center;
+    grid-area: submit;
+    margin-top: 4px;
+    background: skyblue;
+    border: none;
+    color: white;
+    height: 27px;
+    width: 89px;
+  }
+  
+  #blank2 {
+    grid-area: blank2;
+  }
+  #detail-header p{
+  
+  font-size: 21px;
+  
+  font-weight: bold;
+  }
+  #detail-header{
+      
+height: 15%;
+      
+display: flex;
+      
+align-items: center;
+  }
